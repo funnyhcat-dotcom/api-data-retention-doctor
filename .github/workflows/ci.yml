@@ -2,7 +2,7 @@ name: CI
 on:
   push:
   pull_request:
-data retentions:
+permissions:
   contents: read
 jobs:
   test:
