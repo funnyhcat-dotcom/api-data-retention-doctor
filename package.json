@@ -1,0 +1,46 @@
+{
+  "name": "api-data-retention-doctor",
+  "version": "0.1.0",
+  "description": "CLI checker for API data retention and privacy documentation quality.",
+  "type": "module",
+  "bin": {
+    "api-data-retention-doctor": "bin/api-data-retention-doctor.js"
+  },
+  "scripts": {
+    "check": "node --test && node bin/api-data-retention-doctor.js examples/good.md --min-score 85 && node bin/api-data-retention-doctor.js examples/bad.md --min-score 90 --expect-fail",
+    "test": "node --test"
+  },
+  "keywords": [
+    "api",
+    "data-retention",
+    "privacy",
+    "gdpr",
+    "deletion",
+    "documentation",
+    "developer-experience",
+    "cli"
+  ],
+  "author": "funnyhcat-dotcom",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "examples/",
+    "docs/",
+    "assets/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funnyhcat-dotcom/api-data-retention-doctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/funnyhcat-dotcom/api-data-retention-doctor/issues"
+  },
+  "homepage": "https://github.com/funnyhcat-dotcom/api-data-retention-doctor#readme"
+}
